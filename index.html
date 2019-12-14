@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script> 
+    <script src="js/script_leeg.js"></script> 
+    <title>Hoger - Lager</title>
+</head>
+
+<body onload="init()">
+    <header>
+        <button onclick="toonUitleg()">toon speluitleg</button>
+        <div>Score: <span id="score"></span></div>
+    </header>
+   
+    <main>
+
+        <div id="containerLinks">
+            <button class="keuze" onclick="checkAnswer('<')">kleiner</button>
+            <div id="getal">getal</div>
+            <button class="keuze" onclick="">groter</button>
+
+            <div id="startEinde">
+                <button class="start" onclick="">start game</button>
+                <button id="end" class="end" onclick="">end game</button>
+            </div> 
+
+            <div id="resultaat"></div>
+        </div>
+
+        <div id="containerRechts">
+            <h1>scorebord</h1>
+            <div id ="scorebord">
+                <ol>
+                    <li id="game_1"></li>
+                    <li id="game_2"></li>
+                    <li id="game_3"></li>
+                    <li id="game_4"></li>
+                    <li id="game_5"></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy 2019 ROC van Amsterdam
+    </footer>  
+
+</body>
+</html>
